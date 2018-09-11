@@ -1,0 +1,34 @@
+
+img {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Eatery {
+  width: 60%;
+  margin: 16px auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 16px;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1501520158826-76df880863a3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fcfb4406dd853f2495004eefda3ccdeb&auto=format&fit=crop&w=400&q=60");
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.biz-name {
+  margin-top: 5px;
+  font-family: 'Bitter', serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+.cordele {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.2em;
+}
+a{
+ color:white;
+ font-weight: 800;
+}
+
+                  
