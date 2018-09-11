@@ -16,6 +16,8 @@ const RSSToMongo = require('rss-node-mongo');
 
     const properties =
 {
+
+    //don't forget to update api rss
     "rss": "https://www.google.com/alerts/feeds/13505578085637347686/9509981562367748417",
     "db": "mongodb://dave:1rockstar@ds245772.mlab.com:45772/rss",
     "collection": "usmc"
@@ -63,7 +65,7 @@ app.get('/api', function (req, res) {
 
 app.get('/rss', function (req, res){
    
-    const URL = 'https://www.google.com/alerts/feeds/13505578085637347686/7130462090718037575';
+    const URL = 'https://www.google.com/alerts/feeds/13505578085637347686/9509981562367748417';
     parser.parseURL(URL, function (err, parsed){
         if(err){
           console.log("Unable to parse");
