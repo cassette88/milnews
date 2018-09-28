@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Eatery from './Eatery';
-import { Segment, Image } from 'semantic-ui-react';
+
 
 class Eateries extends Component {
     constructor(props){
@@ -11,6 +11,19 @@ class Eateries extends Component {
         headlines: []
     }
 }
+fetchRss (id) {
+
+    axios.get(`/rss/${id}`)
+    .then(res => {
+       const headlines = res.data.items;
+      // (console.log(res.data));
+        this.setState({headlines});
+    })
+    .catch(err => console.log(err));
+
+}
+
+
    componentDidMount() {
     
     axios.get('/rss')
@@ -42,10 +55,22 @@ headlines = (
 			</div>                  
 			    );    
 
-			return (
+			return (    
+                <div>
+                <div className="ui center aligned container">
+                <ol>
+               <button className="ui blue inverted button" onClick={this.fetchRss.bind(this, "3715726507793308443")}>Army</button>
+               <button className="ui red inverted button"  onClick={this.fetchRss.bind(this, "8082617289749568491")}>Navy</button>
+               <button className="ui green inverted button" onClick={this.fetchRss.bind(this, "14477008907129064916")}>Air Force</button>
+               <button className="ui teal inverted button" onClick={this.fetchRss.bind(this, "9509981562367748417")}>Marines</button>
+               <button className="ui pink inverted button" onClick={this.fetchRss.bind(this, "4736082232771657021")}>Coast Guard</button>
+               
+               </ol>
+                </div>
 						<div>
                         {headlines}
-						</div>
+                        </div>
+                        </div>
                     )
             }
             
