@@ -44,9 +44,9 @@ render(){
   return (   
       <Segment style={divStyle}>
      <div className="Eatery">
-     <img src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" />
+     <img className = "ui centered image" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" />
      <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a>
-     <img src={flag} alt="american flag" />
+     <img className = "ui centered image" src={flag} alt="american flag" />
 
      </div>
         </Segment>
