@@ -59,11 +59,11 @@ headlines = (
                 <div>
                 <div className="ui center aligned container">
                 <ol>
-               <button className="ui blue inverted button" onClick={this.fetchRss.bind(this, "3715726507793308443")}>Army</button>
-               <button className="ui red inverted button"  onClick={this.fetchRss.bind(this, "8082617289749568491")}>Navy</button>
-               <button className="ui green inverted button" onClick={this.fetchRss.bind(this, "14477008907129064916")}>Air Force</button>
-               <button className="ui teal inverted button" onClick={this.fetchRss.bind(this, "9509981562367748417")}>Marines</button>
-               <button className="ui pink inverted button" onClick={this.fetchRss.bind(this, "4736082232771657021")}>Coast Guard</button>
+               <button className="ui blue button" onClick={this.fetchRss.bind(this, "3715726507793308443")}>Army</button>
+               <button className="ui blue button"  onClick={this.fetchRss.bind(this, "8082617289749568491")}>Navy</button>
+               <button className="ui blue button" onClick={this.fetchRss.bind(this, "14477008907129064916")}>Air Force</button>
+               <button className="ui blue button" onClick={this.fetchRss.bind(this, "9509981562367748417")}>Marines</button>
+               <button className="ui blue button" onClick={this.fetchRss.bind(this, "4736082232771657021")}>Coast Guard</button>
                
                </ol>
                 </div>

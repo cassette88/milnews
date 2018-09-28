@@ -1,6 +1,6 @@
 import React from  'react';
 import { Segment, Image } from 'semantic-ui-react';
-import flag from './flag.jpg';
+import flag from './ludovic-gauthier-62746-unsplash.jpg';
 import axios from 'axios';
 
 const divStyle ={
@@ -44,9 +44,9 @@ render(){
   return (   
       <Segment style={divStyle}>
      <div className="Eatery">
-     <img src={flag} alt="american flag" />
+     <img src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" />
      <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a>
-     <img src={require('./flag.jpg')} alt="american flag" />
+     <img src={flag} alt="american flag" />
 
      </div>
         </Segment>
