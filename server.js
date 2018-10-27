@@ -9,6 +9,8 @@ const RSSToMongo = require('rss-node-mongo');
 
 const db = require('./config/keys').mongoURI;
 
+
+
 const army =
 {
     "rss": "https://www.google.com/alerts/feeds/13505578085637347686/3715726507793308443",

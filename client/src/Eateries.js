@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Eatery from './Eatery';
+import Branches from './Branches'
 
 
 class Eateries extends Component {
@@ -15,8 +16,9 @@ fetchRss (id) {
 
     axios.get(`/rss/${id}`)
     .then(res => {
-       const headlines = res.data.items;
-      // (console.log(res.data));
+
+        const headlines = res.data.items;
+      
         this.setState({headlines});
     })
     .catch(err => console.log(err));
@@ -70,6 +72,7 @@ headlines = (
 						<div>
                         {headlines}
                         </div>
+                      
                         </div>
                     )
             }
