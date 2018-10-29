@@ -1,7 +1,6 @@
 const express       = require('express');
 const  app          = express();
-const yelp          = require('yelp-fusion');
-const mongoose      = require("mongoose");
+const MongoClient = require('mongodb').MongoClient
 const Parser        = require('rss-parser');
 const parser        = new Parser();
 const path          = require('path');
@@ -9,6 +8,12 @@ const RSSToMongo = require('rss-node-mongo');
 
 const db = require('./config/keys').mongoURI;
 
+
+MongoClient.connect(db, { useNewUrlParser: true },function (err, client) {
+    if (err) throw err;
+mongodb = client.db('military-rss');
+console.log("Military db up");
+})
 
 
 const army =
@@ -121,18 +126,26 @@ app.get('/rss', function (req, res){
         });
    });
 //route with options
-   app.get('/rss/:id', function (req, res){
+//    app.get('/rss/:id', function (req, res){
    
-    const URL = `https://www.google.com/alerts/feeds/13505578085637347686/${req.params.id}`;
-    parser.parseURL(URL, function (err, parsed){
-        if(err){
-          console.log("Unable to parse");
-        }  else {
-            res.json(parsed);
-               }
-        });
-   });
+//     const URL = `https://www.google.com/alerts/feeds/13505578085637347686/${req.params.id}`;
+//     parser.parseURL(URL, function (err, parsed){
+//         if(err){
+//           console.log("Unable to parse");
+//         }  else {
+//             res.json(parsed);
+//                }
+//         });
+//    });
 
+   app.get('/news/:id', (req, res) => {
+    mongodb.collection(`${req.params.id}`).find().limit(10).sort({$natural : -1}).toArray((err, result) => {
+      if (err) return console.log(err)
+      res.json(result);
+     })
+  });
+
+  
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, 'client/build')))
 // Anything that doesn't match the above, send back index.html

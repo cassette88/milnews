@@ -17,10 +17,9 @@
     "axios": "^0.18.0",
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
-    "mongoose": "^5.2.13",
+    "mongodb": "^3.1.8",
     "rss-node-mongo": "^1.0.3",
-    "rss-parser": "^3.4.3",
-    "yelp-fusion": "^2.0.3"
+    "rss-parser": "^3.4.3"
   },
   "engines": {
     "node": "10.6.0"
