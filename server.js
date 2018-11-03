@@ -5,6 +5,7 @@ const Parser        = require('rss-parser');
 const parser        = new Parser();
 const path          = require('path');
 const RSSToMongo = require('rss-node-mongo');
+const feedURL = "https://www.google.com/alerts/feeds/13505578085637347686/";
 
 const db = require('./config/keys').mongoURI;
 
@@ -15,10 +16,26 @@ mongodb = client.db('military-rss');
 console.log("Military db up");
 })
 
+// constructor to refactor code
+// function Branch(rss, collection){
+//     this.rss = `${feedURL}${this.rss}`;
+//     this.collection = collection;
+//     this.db = db;
+//     rss = new RSSToMongo(this.collection)
+//     rss.work(function (err, success){
+//          if(!err) {
+//      console.log(success.saved + `${this.collection} related items were saved`)
+//      } else {
+//          console.error(err)
+//      }
+    
+// })
+// }
 
+// Branch(3715726507793308443,"army");
 const army =
 {
-    "rss": "https://www.google.com/alerts/feeds/13505578085637347686/3715726507793308443",
+    "rss": `${feedURL}3715726507793308443`,
     "db": db,
     "collection": "army"
 }
@@ -36,7 +53,7 @@ rssArmy.work(function (err, success) {
 
 const navy =
 {
-    "rss": "https://www.google.com/alerts/feeds/13505578085637347686/8082617289749568491",
+    "rss": `${feedURL}8082617289749568491`,
     "db": db,
     "collection": "navy"
 }
@@ -54,7 +71,7 @@ rssNavy.work(function (err, success) {
 
 const AF =
 {
-    "rss": "https://www.google.com/alerts/feeds/13505578085637347686/14477008907129064916",
+    "rss": `${feedURL}14477008907129064916`,
     "db": db,
     "collection": "air-force"
 }
@@ -72,7 +89,7 @@ rssAF.work(function (err, success) {
 
 const coastGuard =
 {
-    "rss": "https://www.google.com/alerts/feeds/13505578085637347686/4736082232771657021",
+    "rss": `${feedURL}4736082232771657021`,
     "db": db,
     "collection": "coast-guard"
 }
@@ -91,7 +108,7 @@ rssCoast.work(function (err, success) {
 
     const usmc =
 {
-    "rss": "https://www.google.com/alerts/feeds/13505578085637347686/9509981562367748417",
+    "rss": `${feedURL}9509981562367748417`,
     "db": db,
     "collection": "usmc"
 }
