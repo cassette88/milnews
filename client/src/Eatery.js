@@ -14,7 +14,8 @@ const divStyle ={
 //let howbahdis = "";
 //let isEmpty = false;
 let title = "";
-let quote = ";"
+let quote = "";
+let amp = "";
 
 //let howbahdisnow = howbahdis.split('&');
 
@@ -29,6 +30,7 @@ class Eatery extends React.Component {
     const howbahdat = this.props.title;
     title = howbahdat.replace(/&#39;/g, "'");
     quote = title.replace(/&quot;/g, " \" ");
+    amp = quote.replace(/&amp;/g, "and");
 
     //console.log(isEmpty);
 
@@ -46,7 +48,7 @@ render(){
      <img className = "ui centered image" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" />
    
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
-     <a href={this.props.link}><p className="cordele">{quote}....</p></a>
+     <a href={this.props.link}><p className="cordele">{amp}....</p></a>
     
      <img className = "ui centered image" src={flag} alt="american flag" />
     
