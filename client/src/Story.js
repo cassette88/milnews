@@ -50,7 +50,7 @@ render(){
      <img className = "ui centered image" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" />
    
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
-     <a href={this.props.link}><p className="cordele">{amp}....</p></a>
+     <a href={this.props.link}><p className="cordele" align="center">{amp}....</p></a>
     
      <img className = "ui centered image" src={flag} alt="american flag" />
     
