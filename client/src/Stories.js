@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Eatery from './Eatery';
+import Story from './Story';
 import {Container, Row} from 'reactstrap';
 //import Branches from './Branches'
 
 
-class Eateries extends Component {
+class Stories extends Component {
     constructor(props){
         super(props);
         
@@ -49,7 +49,7 @@ headlines = (
 		
 		<div>
          { this.state.headlines.map((headline) => {
-          return  <Eatery 
+          return  <Story 
           
                      key={headline._id}
                      title= {headline.title}
@@ -95,4 +95,4 @@ headlines = (
             }
             
         }           
-export default Eateries;
+export default Stories;

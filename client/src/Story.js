@@ -1,13 +1,15 @@
 import React from  'react';
 import { Segment } from 'semantic-ui-react';
 import flag from './ludovic-gauthier-62746-unsplash.jpg';
+//import backdrop from './eberhard-grossgastelger.jpg';
 
 
 const divStyle ={
-  backgroundImage: 'url("https://images.unsplash.com/photo-1536497350214-99d33d7f7880?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a34c9361ffc74c009f5f6696b19e5e5e&auto=format&fit=crop&w=400&q=60")',
-  backgroundSize: 'contain cover',
+ backgroundImage: 'url("https://images.unsplash.com/photo-1536497350214-99d33d7f7880?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a34c9361ffc74c009f5f6696b19e5e5e&auto=format&fit=crop&w=400&q=60")',
+ // backgroundImage: 'url("./eberhard-grossgastelger.jpg")',
+  backgroundSize: 'cover',
   backgroundPosition: 'center',
-  // backgroundSize: 'cover'
+  //backgroundSize: 'contain'
 };
 
 //let howbahdatnow = '';
@@ -19,7 +21,7 @@ let amp = "";
 
 //let howbahdisnow = howbahdis.split('&');
 
-class Eatery extends React.Component {
+class Story extends React.Component {
   constructor(props){
     super(props);
   
@@ -59,4 +61,4 @@ render(){
   };
 }
 
-export default Eatery;
+export default Story;
