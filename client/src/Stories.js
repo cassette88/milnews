@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Story from './Story';
 import {Container, Row} from 'reactstrap';
+const uuidv4 = require('uuid/v4');
 //import Branches from './Branches'
 
 
@@ -10,7 +11,13 @@ class Stories extends Component {
         super(props);
         
         this.state = {
-        headlines: []
+        headlines: [],
+        army: true,
+        navy: true,
+        af: true,
+        usmc: true,
+        cg: true
+
     }
 }
 fetchRss (id) {
@@ -49,10 +56,12 @@ headlines = (
 		
 		<div>
          { this.state.headlines.map((headline) => {
-          return  <Story 
-          
-                     key={headline._id}
-                     title= {headline.title}
+             const id_ = uuidv4();
+         return  <Story 
+
+                   //  key={headline._id}
+                   key={id_}  
+                   title= {headline.title}
                   //   content={headline.contentSnippet}
                      link={headline.link}
                       /> 
