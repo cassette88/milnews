@@ -7,8 +7,18 @@ h1{
 
 img {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+img:hover {
+    filter: brightness(120%);
 }
 
+.segment {
+background: #009FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .text-center{
     text-align: center;
     padding: 6px;
@@ -63,6 +73,11 @@ img {
 a{
  color:black;
  font-weight: 800;
+ 
+}
+
+a:link {
+    text-decoration: underline;
 }
 
 @keyframes moveInLeft {
