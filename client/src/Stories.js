@@ -86,10 +86,10 @@ headlines = (
                <button className="ui blue button" onClick={this.fetchRss.bind(this, "4736082232771657021")}>Coast Guard</button> */}
              
                <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "army")}>Army</button>
-               <button className="topbutton item ui white button"  onClick={this.fetchRss.bind(this, "navy")}>Navy</button>
-               <button className="topbutton item ui blue button" onClick={this.fetchRss.bind(this, "air-force")}>Air Force</button>
-               <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "usmc")}>Marines</button>
-               <button className="topbutton item ui white button" onClick={this.fetchRss.bind(this, "coast-guard")}>Coast Guard</button>
+               <button className="topbutton item ui blue button"  onClick={this.fetchRss.bind(this, "navy")}>Navy</button>
+               <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "air-force")}>Air Force</button>
+               <button className="topbutton item ui blue button" onClick={this.fetchRss.bind(this, "usmc")}>Marines</button>
+               <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "coast-guard")}>Coast Guard</button>
                
                </div>
                {/* </ol> */}
