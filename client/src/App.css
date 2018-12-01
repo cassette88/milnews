@@ -88,7 +88,7 @@ a:link {
   }
 
   80% {
-      transform: translateX(25px);
+      transform: translateX(5px);
   }
 
   100% {
@@ -105,7 +105,7 @@ a:link {
   }
 
   80% {
-      transform: translateX(-25px);
+      transform: translateX(5px);
   }
 
   100% {
