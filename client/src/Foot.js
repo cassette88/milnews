@@ -1,6 +1,11 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
 
+const divStyle = {
+  width:'120px',
+  height:'240px'
+}
+
 class Foot extends React.Component {
 render() {
 return (
@@ -12,18 +17,18 @@ return (
       <p>
      Latest miilitary news sourced by Google Alerts.
       </p>
-      <script type="text/javascript">
-amzn_assoc_tracking_id = "milmerch-20";
-amzn_assoc_ad_mode = "manual";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_design = "enhanced_links";
-amzn_assoc_asins = "B01HNNH8TW";
-amzn_assoc_placement = "adunit";
-amzn_assoc_linkid = "15dab1eef71bdf2afa430615fec2de77";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+      
+      <iframe style={divStyle} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B0198NWP52&asins=B0198NWP52&linkId=45bcbdfb3ff9dd30829d4a976b314bfd&show_border=true&link_opens_in_new_window=true"></iframe>
+      
+      <iframe style={divStyle} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B00AAXYDTG&asins=B00AAXYDTG&linkId=42031abe53c2706a19f19b444acfc699&show_border=true&link_opens_in_new_window=true"></iframe>
+      
+      <iframe style={divStyle} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B07HBDNFBZ&asins=B07HBDNFBZ&linkId=09b69a6bca56bbc5e5e3b550ea1a8ac0&show_border=true&link_opens_in_new_window=true"></iframe>
+      
+      <iframe  style={divStyle} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B01HNNH8TW&asins=B01HNNH8TW&linkId=ca4f3845ef06984d4a657580c0b74742&show_border=true&link_opens_in_new_window=true"></iframe>
+      
+      <iframe style={divStyle} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B077X3F94M&asins=B077X3F94M&linkId=d398138c4eb675ec7f5d0a530f778c7a&show_border=true&link_opens_in_new_window=true"></iframe>
+      
+      <iframe style={divStyle} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B079P848NG&asins=B079P848NG&linkId=f7741cb1344239601a34610a310f6952&show_border=true&link_opens_in_new_window=true"></iframe>
       </Col>
       {/* <Col md="6">
       <h5 className="title">Links</h5>
