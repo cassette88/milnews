@@ -1,8 +1,18 @@
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rosario', sans-serif;
+} 
+
 h1{
     font-family: 'Rosario', sans-serif; 
     letter-spacing: 4.5px;
     animation-name: moveInRight;
   animation-duration: 5s;
+}
+
+.headline {
+    font-family: 'Rosario', sans-serif;
 }
 
 img {
@@ -67,16 +77,20 @@ background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, F
 	font-size: 2em;
 }
 .cordele {
-	/* font-family: 'Roboto Mono', monospace; */
+ /* font-family: 'Roboto Mono', monospace;  */
   font-size: 1.2em;
   /* padding: 7px; */
   padding-top: 5px;
   padding-bottom: 3px;
   animation-name: moveInLeft;
   animation-duration: 5s;
-  font-family: 'Rosario', sans-serif;
+   font-family: 'Rosario', sans-serif; 
   font-weight: 700;
   letter-spacing: 4px;
+}
+
+.mar {
+    margin-bottom: 6.5px;
 }
 
 

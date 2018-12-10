@@ -62,8 +62,8 @@ headlines = (
                    //  key={headline._id}
                    key={id_}  
                    title= {headline.title}
-                  //   content={headline.contentSnippet}
-                     link={headline.link}
+                   description={headline.description}
+                   link={headline.link}
                       /> 
                  })}
 			</div>                  
