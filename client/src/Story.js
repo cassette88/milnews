@@ -1,6 +1,8 @@
 import React from  'react';
 import { Segment } from 'semantic-ui-react';
 import flag from './ludovic-gauthier-62746-unsplash.jpg';
+import Zoom from 'react-reveal/Zoom';
+
 //import backdrop from './eberhard-grossgastelger.jpg';
 
 
@@ -48,17 +50,18 @@ render(){
   return (   
    
       <Segment className="segment" style={divStyle}>
-       
+       <Zoom>
      <div className="Eatery">
+     
      <img className = "ui centered image" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" />
    
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
      <a href={this.props.link}><p className="cordele" align="center">{amp}....</p></a>
     
      <img className = "ui centered image" src={flag} alt="american flag" />
-    
+     
      </div>
-       
+     </Zoom>
         </Segment>
     );
   };
