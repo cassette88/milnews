@@ -2,6 +2,7 @@ import React from  'react';
 import { Segment } from 'semantic-ui-react';
 import flag from './ludovic-gauthier-62746-unsplash.jpg';
 import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 //import backdrop from './eberhard-grossgastelger.jpg';
 
@@ -70,7 +71,9 @@ render(){
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
     <img className = "ui centered image mar" src={require('./img/lieutenant-j-l-smith.jpg')} alt="lt smith" />
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
+    <Fade bottom>
     <h4 className="cordele" align="center">{space}....</h4>
+    </Fade>
     {/* <img className = "ui centered image mar" src={flag} alt="american flag" /> */}
     <img className = "ui centered image mar" src={require('./img/marine-children.jpg')} alt="american flag" />
 

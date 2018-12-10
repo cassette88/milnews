@@ -14,6 +14,8 @@ return (
     <Row>
       <Col md="6">
       <h5 className="title">Military News Info</h5>
+      <a href="https://www.wikiwand.com/en/John_Smith_(flying_ace)">
+      <p>photo of: Marine Aviator Lieutenant J. L. Smith</p></a>
       <p>
      Latest miilitary news sourced by Google Alerts.
       </p>
@@ -52,7 +54,7 @@ return (
   <div className="footer-copyright text-center py-3">
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://www.MDBootstrap.com"> MilitaryInfo.com </a>
+      <a href="https://www.militarynews.info/">MilitaryNews.info </a>
     </Container>
   </div>
 </Footer>
