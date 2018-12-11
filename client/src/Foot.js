@@ -12,7 +12,7 @@ return (
 <Footer color="black" className="font-small pt-4 mt-4">
   <Container fluid className="text-center text-md-left">
     <Row>
-      <Col md="6">
+      <Col align="center">
       <h5 className="title">Military News Info</h5>
       {/* <a href="https://www.wikiwand.com/en/John_Smith_(flying_ace)">
       <p>photos: Marine Aviator Lieutenant J. L. Smith</p></a>
