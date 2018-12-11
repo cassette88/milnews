@@ -40,8 +40,16 @@ class Story extends React.Component {
     this.rImages = [require('./img/lieutenant-j-l-smith.jpg'),
     require('./img/army-alaska.jpg'), require('./img/army-europe.jpg'),
     require('./img/national-guard-sc.jpg'), require('./img/harry-white-navy.jpg'),
-    require('./img/decarlo-family-1944.jpg')
-    ] 
+    require('./img/decarlo-family-1944.jpg'), require('./img/culinary-spec-gomez-chef-ng.jpg'),
+    require('./img/2maw-marines.jpg'), require('./img/boyd-santiago-navy.jpg'), 
+    require('./img/LC-Ratliff.jpg'), require('./img/sea-breeze.jpg'),
+    require('./img/captain-usmc-ww2.jpg'), require('./img/detainee-training.jpg'),  
+    require('./img/adams-range.jpg'), require('./img/marines-kids-books.jpg'), 
+    require('./img/good-old-days-parade.jpg'), require('./img/kelsey-casey-usmc-pilot.jpg'),
+    require('./img/good-old-days-parade2.jpg'), require('./img/pebble-beach.jpg'),  
+    require('./img/charles-m-daniels.jpg'), require('./img/home-lucian-friel.jpg'),
+    require('./img/good-old-days-parade3.jpg'), require('./img/39-45-8th-air-force.jpg'), 
+  ] 
 
     this.state = {
       newScoop: true,

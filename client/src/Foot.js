@@ -14,10 +14,11 @@ return (
     <Row>
       <Col md="6">
       <h5 className="title">Military News Info</h5>
-      <a href="https://www.wikiwand.com/en/John_Smith_(flying_ace)">
-      <p>photo of: Marine Aviator Lieutenant J. L. Smith</p></a>
-      <p>
-     Latest miilitary news sourced by Google Alerts.
+      {/* <a href="https://www.wikiwand.com/en/John_Smith_(flying_ace)">
+      <p>photos: Marine Aviator Lieutenant J. L. Smith</p></a>
+      <p>Decarlo family</p>
+      <p>Harry White naval aviator</p> */}
+     <p>Latest military news sourced by Google Alerts.
       </p>
       
       <iframe title="army shirt" style={divStyle} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=milmerch-20&marketplace=amazon&region=US&placement=B0198NWP52&asins=B0198NWP52&linkId=45bcbdfb3ff9dd30829d4a976b314bfd&show_border=true&link_opens_in_new_window=true"></iframe>
