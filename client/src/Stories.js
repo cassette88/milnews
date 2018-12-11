@@ -72,28 +72,23 @@ headlines = (
 
 			return (    
                 <div>
-                 <Container>
-                     <Row className="text-center"> 
-                     <h1>Latest Military News</h1>
-                    </Row>
-                </Container>      
-              {/* <div className="ui center aligned container"> */}
-              <div className="ui stackable center aligned container menu">
-                {/* <ol className="button-list"> */}
-               {/* <button className="ui blue button" onClick={this.fetchRss.bind(this, "3715726507793308443")}>Army</button>
-               <button className="ui blue button"  onClick={this.fetchRss.bind(this, "8082617289749568491")}>Navy</button>
-               <button className="ui blue button" onClick={this.fetchRss.bind(this, "14477008907129064916")}>Air Force</button>
-               <button className="ui blue button" onClick={this.fetchRss.bind(this, "9509981562367748417")}>Marines</button>
-               <button className="ui blue button" onClick={this.fetchRss.bind(this, "4736082232771657021")}>Coast Guard</button> */}
-             
-               <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "army")}>Army</button>
-               <button className="topbutton item ui blue button"  onClick={this.fetchRss.bind(this, "navy")}>Navy</button>
-               <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "air-force")}>Air Force</button>
-               <button className="topbutton item ui blue button" onClick={this.fetchRss.bind(this, "usmc")}>Marines</button>
-               <button className="topbutton item ui red button" onClick={this.fetchRss.bind(this, "coast-guard")}>Coast Guard</button>
+                 
+                     <div className="row text-center" align="center"> 
+                     <div className="col">
+                     <h1 align ="center">Latest Military News</h1>
+                     </div>
+                    </div>
+                   
+              {/* <div className="ui stackable center aligned container menu"> */}
+            <div align="center">
+               <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "army")}>Army</button>
+               <button align="center" type="button" class="btn btn-primary"  onClick={this.fetchRss.bind(this, "navy")}>Navy</button>
+               <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "air-force")}>Air Force</button>
+               <button align="center" type="button" class="btn btn-primary" onClick={this.fetchRss.bind(this, "usmc")}>Marines</button>
+               <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "coast-guard")}>Coast Guard</button>
                
                </div>
-               {/* </ol> */}
+               
                 
 						<div>
                          

@@ -30,7 +30,9 @@ let amp_  = "";
 let bold = "";
 let bold_ = "";
 let space = "";
+let final = "";
 var rImage = "";
+
 
 //let howbahdisnow = howbahdis.split('&');
 
@@ -72,6 +74,7 @@ rImage = this.rImages[randomInt]
     bold = amp_.replace(/<b>/g, "");
     bold_ = bold.replace(/<\/b>/g, "");
     space = bold_.replace(/&nbsp;/g, "");
+    final = space.replace(/&gt;/g, "");
 
     //console.log(isEmpty);
 
@@ -83,23 +86,25 @@ rImage = this.rImages[randomInt]
 render(){
   return (   
    
-      <Segment className="segment" style={divStyle}>
+      // <Segment className="segment" style={divStyle}>
+      <div style={divStyle}className="col-sm-12 space" align="center">
        <Zoom>  
-     <div className="Eatery">
+     <div className="card-body Eatery">
      <h2 className ="headline" align="center">{amp}</h2>
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
-    <img className = "ui centered image mar" src={rImage} alt="personel" />
+    <img className = "img-fluid mar" src={rImage} alt="personel" />
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
     <Fade bottom>
-    <h4 className="cordele" align="center">{space}....</h4>
+    <h4 className="textBody mar" >{final}....</h4>
     </Fade>
     {/* <img className = "ui centered image mar" src={flag} alt="american flag" /> */}
-    <img className = "ui centered image mar" src={require('./img/marine-children.jpg')} alt="american flag" />
-
-    <a href={this.props.link}> <button className="topbutton item ui blue button">Go to Story</button></a> 
+    <div>
+    <img className = "img-fluid" src={require('./img/marine-children.jpg')} alt="american flag" />
+    </div>
+    <a className ="card-text"href={this.props.link}> <button type="button"className="btn btn-primary nav-item navspace">Go to Story</button></a> 
      </div>
      </Zoom>
-        </Segment>
+        </div>
     );
   };
 }

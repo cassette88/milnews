@@ -11,9 +11,9 @@ h1{
   animation-duration: 5s;
 }
 
-.headline {
+/* .headline {
     font-family: 'Rosario', sans-serif;
-}
+} */
 
 img {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -102,6 +102,9 @@ a{
 
 a:link {
     text-decoration: underline;
+}
+.textBody {
+   margin:5px;
 }
 
 @keyframes moveInLeft {
