@@ -1,6 +1,7 @@
 import React from  'react';
 // import { Segment } from 'semantic-ui-react';
 // import flag from './ludovic-gauthier-62746-unsplash.jpg';
+import Radium, {StyleRoot} from 'radium';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 var uniqueRandomArray = require('unique-random-array');
@@ -9,16 +10,16 @@ var uniqueRandomArray = require('unique-random-array');
 
 
 const divStyle ={
-// backgroundImage: 'url("https://images.unsplash.com/photo-1536497350214-99d33d7f7880?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a34c9361ffc74c009f5f6696b19e5e5e&auto=format&fit=crop&w=400&q=60")',
- // backgroundImage: 'url("./eberhard-grossgastelger.jpg")',
-  //backgroundSize: 'cover',
- // backgroundPosition: 'center',
-  //backgroundSize: 'contain'
   background: '#0052A5', 
   background: '-webkit-linear-gradient(to right, #E0162B, #0052A5)',
   background: 'linear-gradient(to right, #E0162B, #0052A5)' 
 };
-
+var mobile = {
+ 
+ '@media (max-width: 420px)': {
+    width: '100%'
+  }
+};
 //let howbahdatnow = '';
 //let howbahdis = "";
 //let isEmpty = false;
@@ -77,21 +78,15 @@ class Story extends React.Component {
     bold_ = bold.replace(/<\/b>/g, "");
     space = bold_.replace(/&nbsp;/g, "");
     final = space.replace(/&gt;/g, "");
-
-    //console.log(isEmpty);
-
-    //howbahdatnow = howbahdat.split('&');
-  
-    
   }
   
 render(){
   return (   
    
-      // <Segment className="segment" style={divStyle}>
       <div style={divStyle}className="col-sm-12 space" align="center">
        <Zoom>  
-     <div className="card-body Eatery" align="center">
+         <StyleRoot>
+     <div style={mobile} className="card-body Eatery" align="center">
      <h2 className ="headline" align="center">{amp}</h2>
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
     <img className = "img-fluid" src={rImages()} alt="personel" />
@@ -107,10 +102,11 @@ render(){
     </div>
     <a className ="card-text"href={this.props.link}> <button type="button"className="btn btn-primary nav-item navspace">Go to Story</button></a> 
      </div>
+     </StyleRoot>
      </Zoom>
         </div>
     );
   };
 }
 
-export default Story;
+export default Radium(Story);
