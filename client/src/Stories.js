@@ -94,7 +94,16 @@ headlines = (
                          
                         {headlines}
                         </div>
-                      
+                        <div align="center">
+               <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "army")}>Army</button>
+               <button align="center" type="button" class="btn btn-primary"  onClick={this.fetchRss.bind(this, "navy")}>Navy</button>
+               <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "air-force")}>Air Force</button>
+               <button align="center" type="button" class="btn btn-primary" onClick={this.fetchRss.bind(this, "usmc")}>Marines</button>
+               <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "coast-guard")}>Coast Guard</button>
+               
+               </div>   
+
+
                         </div>
                     )
             }
