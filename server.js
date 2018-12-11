@@ -160,7 +160,7 @@ app.get('/rss', function (req, res){
 //    });
 
    app.get('/news/:id', (req, res) => {
-    mongodb.collection(`${req.params.id}`).find().limit(10).sort({$natural : -1}).toArray((err, result) => {
+    mongodb.collection(`${req.params.id}`).find().limit(15).sort({$natural : -1}).toArray((err, result) => {
       if (err) return console.log(err)
       res.json(result);
      })

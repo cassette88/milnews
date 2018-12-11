@@ -1,8 +1,9 @@
 import React from  'react';
-import { Segment } from 'semantic-ui-react';
-import flag from './ludovic-gauthier-62746-unsplash.jpg';
+// import { Segment } from 'semantic-ui-react';
+// import flag from './ludovic-gauthier-62746-unsplash.jpg';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
+var uniqueRandomArray = require('unique-random-array');
 
 //import backdrop from './eberhard-grossgastelger.jpg';
 
@@ -31,7 +32,7 @@ let bold = "";
 let bold_ = "";
 let space = "";
 let final = "";
-var rImage = "";
+var rImages = "";
 
 
 //let howbahdisnow = howbahdis.split('&');
@@ -39,7 +40,7 @@ var rImage = "";
 class Story extends React.Component {
   constructor(props){
     super(props);
-    this.rImages = [require('./img/lieutenant-j-l-smith.jpg'),
+    rImages = uniqueRandomArray([require('./img/lieutenant-j-l-smith.jpg'),
     require('./img/army-alaska.jpg'), require('./img/army-europe.jpg'),
     require('./img/national-guard-sc.jpg'), require('./img/harry-white-navy.jpg'),
     require('./img/decarlo-family-1944.jpg'), require('./img/culinary-spec-gomez-chef-ng.jpg'),
@@ -51,7 +52,8 @@ class Story extends React.Component {
     require('./img/good-old-days-parade2.jpg'), require('./img/pebble-beach.jpg'),  
     require('./img/charles-m-daniels.jpg'), require('./img/home-lucian-friel.jpg'),
     require('./img/good-old-days-parade3.jpg'), require('./img/39-45-8th-air-force.jpg'), 
-  ] 
+    require('./img/marine-children.jpg')
+  ]); 
 
     this.state = {
       newScoop: true,
@@ -59,8 +61,8 @@ class Story extends React.Component {
      
     }
 
-var randomInt = Math.floor(Math.random() * this.rImages.length)
-rImage = this.rImages[randomInt]
+// var randomInt = Math.floor(Math.random() * this.rImages.length)
+// rImage = this.rImages[randomInt]
 
     const storyTitle = this.props.title;
     title = storyTitle.replace(/&#39;/g, "'");
@@ -92,14 +94,16 @@ render(){
      <div className="card-body Eatery" align="center">
      <h2 className ="headline" align="center">{amp}</h2>
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
-    <img className = "img-fluid mar" src={rImage} alt="personel" />
+    <img className = "img-fluid" src={rImages()} alt="personel" />
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
     <Fade bottom>
-    <h4 className="textBody mar" >{final}....</h4>
+    <div className="mar">
+    <h4 className="textBody" >{final}....</h4>
+    </div>
     </Fade>
     {/* <img className = "ui centered image mar" src={flag} alt="american flag" /> */}
     <div>
-    <img className = "img-fluid" src={require('./img/marine-children.jpg')} alt="american flag" />
+    <img className = "img-fluid" src={rImages()} alt="american flag" />
     </div>
     <a className ="card-text"href={this.props.link}> <button type="button"className="btn btn-primary nav-item navspace">Go to Story</button></a> 
      </div>
