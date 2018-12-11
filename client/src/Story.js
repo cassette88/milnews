@@ -84,9 +84,11 @@ render(){
   return (   
    
       <div style={divStyle}className="col-sm-12 space" align="center">
-       <Zoom>  
+       
          <StyleRoot>
+         <Fade>
      <div style={mobile} className="card-body Eatery" align="center">
+   
      <h2 className ="headline" align="center">{amp}</h2>
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
     <img className = "img-fluid" src={rImages()} alt="personel" />
@@ -98,12 +100,17 @@ render(){
     </Fade>
     {/* <img className = "ui centered image mar" src={flag} alt="american flag" /> */}
     <div>
+      <Fade>
     <img className = "img-fluid" src={rImages()} alt="american flag" />
+    </Fade>
     </div>
+    <Zoom>
     <a className ="card-text"href={this.props.link}> <button type="button"className="btn btn-primary nav-item navspace">Go to Story</button></a> 
+    </Zoom>
      </div>
+     </Fade>
      </StyleRoot>
-     </Zoom>
+    
         </div>
     );
   };
