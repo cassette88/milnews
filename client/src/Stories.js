@@ -12,13 +12,10 @@ class Stories extends Component {
         
         this.state = {
         headlines: [],
-        army: true,
-        navy: true,
-        af: true,
-        usmc: true,
-        cg: true
-
+        branch: "usmc"
+       
     }
+    
 }
 fetchRss (id) {
 
@@ -26,8 +23,10 @@ fetchRss (id) {
     .then(res => {
 
         const headlines = res.data;
-       // console.log(headlines);
+        const branch = id;
+        // console.log(headlines);
         this.setState({headlines});
+        this.setState({branch});
     })
     .catch(err => console.log(err));
 
@@ -64,8 +63,10 @@ headlines = (
                    title= {headline.title}
                    description={headline.description}
                    link={headline.link}
+                   branch = {this.state.branch}
                       /> 
                  })}
+            
 			</div>                  
 			    );    
 

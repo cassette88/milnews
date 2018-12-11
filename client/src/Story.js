@@ -30,17 +30,28 @@ let amp_  = "";
 let bold = "";
 let bold_ = "";
 let space = "";
+var rImage = "";
 
 //let howbahdisnow = howbahdis.split('&');
 
 class Story extends React.Component {
   constructor(props){
     super(props);
-  
+    this.rImages = [require('./img/lieutenant-j-l-smith.jpg'),
+    require('./img/army-alaska.jpg'), require('./img/army-europe.jpg'),
+    require('./img/national-guard-sc.jpg'), require('./img/harry-white-navy.jpg'),
+    require('./img/decarlo-family-1944.jpg')
+    ] 
+
     this.state = {
       newScoop: true,
-      news:[]
+      news:[],
+     
     }
+
+var randomInt = Math.floor(Math.random() * this.rImages.length)
+rImage = this.rImages[randomInt]
+
     const storyTitle = this.props.title;
     title = storyTitle.replace(/&#39;/g, "'");
     quote = title.replace(/&quot;/g, " \" ");
@@ -65,11 +76,11 @@ render(){
   return (   
    
       <Segment className="segment" style={divStyle}>
-       <Zoom>
+       <Zoom>  
      <div className="Eatery">
      <h2 className ="headline" align="center">{amp}</h2>
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
-    <img className = "ui centered image mar" src={require('./img/lieutenant-j-l-smith.jpg')} alt="lt smith" />
+    <img className = "ui centered image mar" src={rImage} alt="personel" />
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}
     <Fade bottom>
     <h4 className="cordele" align="center">{space}....</h4>
