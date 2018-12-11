@@ -53,13 +53,16 @@ background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, F
     text-align: center;
 } */
 
+.card-body{
+    padding:0;
+}
 
 .Eatery {
-  width: 60%;
-  margin: 16px auto;
-  border: 1px solid #eee;
+   width: 70%; 
+   margin: 16px auto; 
+   border: 1px solid #eee; 
   box-shadow: 0 2px 3px #ccc;
-  padding: 16px;
+  /* padding: 16px; */
   text-align: center;
   /* background-image: url("https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=824b0560c76469fa22c2ecdf1985ac01&auto=format&fit=crop&w=400&q=60"); */
   /* background-image: url("https://images.unsplash.com/photo-1440407876336-62333a6f010f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=308007c4696ff2d58ab972a8e2811931&auto=format&fit=crop&w=400&q=60"); */

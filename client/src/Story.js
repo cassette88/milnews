@@ -89,7 +89,7 @@ render(){
       // <Segment className="segment" style={divStyle}>
       <div style={divStyle}className="col-sm-12 space" align="center">
        <Zoom>  
-     <div className="card-body Eatery">
+     <div className="card-body Eatery" align="center">
      <h2 className ="headline" align="center">{amp}</h2>
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
     <img className = "img-fluid mar" src={rImage} alt="personel" />
