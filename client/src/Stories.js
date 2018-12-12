@@ -105,7 +105,7 @@ headlines = (
                <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "air-force")}>Air Force</button>
                <button align="center" type="button" class="btn btn-primary" onClick={this.fetchRss.bind(this, "usmc")}>Marines</button>
                <button align="center" type="button" class="btn btn-danger" onClick={this.fetchRss.bind(this, "coast-guard")}>Coast Guard</button> */}
-                 <button align="center" type="button" class="btn btn-success"><a onClick={this.scrollToTop}>To the top!</a></button>
+                 <button align="center" type="button" class="btn btn-success"onClick={this.scrollToTop}>To the top</button>
                </div>   
 
 

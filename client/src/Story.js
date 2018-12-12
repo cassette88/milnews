@@ -10,10 +10,14 @@ var uniqueRandomArray = require('unique-random-array');
 
 
 const divStyle ={
-  background: '#0052A5', 
-  background: '-webkit-linear-gradient(to right, #E0162B, #0052A5)',
-  background: 'linear-gradient(to right, #E0162B, #0052A5)' 
-};
+  // background: '#0052A5', 
+  // background: '-webkit-linear-gradient(to right, #E0162B, #0052A5)',
+  // background: 'linear-gradient(to right, #E0162B, #0052A5)' 
+
+   background: 'linear-gradient(to right, #E0162B, #0052A5)',
+   letterSpacing: '2px'
+}
+
 var mobile = {
   fontFamily: 'Fjalla One',
  '@media (max-width: 420px)': {
