@@ -45,19 +45,19 @@ var rImages = "";
 class Story extends React.Component {
   constructor(props){
     super(props);
-    rImages = uniqueRandomArray([require('./img/lieutenant-j-l-smith.jpg'),
-    require('./img/army-alaska.jpg'), require('./img/army-europe.jpg'),
-    require('./img/national-guard-sc.jpg'), require('./img/harry-white-navy.jpg'),
-    require('./img/decarlo-family-1944.jpg'), require('./img/culinary-spec-gomez-chef-ng.jpg'),
-    require('./img/2maw-marines.jpg'), require('./img/boyd-santiago-navy.jpg'), 
-    require('./img/LC-Ratliff.jpg'), require('./img/sea-breeze.jpg'),
-    require('./img/captain-usmc-ww2.jpg'), require('./img/detainee-training.jpg'),  
-    require('./img/adams-range.jpg'), require('./img/marines-kids-books.jpg'), 
-    require('./img/good-old-days-parade.jpg'), require('./img/kelsey-casey-usmc-pilot.jpg'),
-    require('./img/good-old-days-parade2.jpg'), require('./img/pebble-beach.jpg'),  
-    require('./img/charles-m-daniels.jpg'), require('./img/home-lucian-friel.jpg'),
-    require('./img/good-old-days-parade3.jpg'), require('./img/39-45-8th-air-force.jpg'), 
-    require('./img/marine-children.jpg')
+    rImages = uniqueRandomArray([require('./img/lieutenant-j-l-smith.png'),
+    require('./img/army-alaska.png'), require('./img/army-europe.png'),
+    require('./img/national-guard-sc.png'), require('./img/harry-white-navy.png'),
+    require('./img/decarlo-family-1944.png'), require('./img/culinary-spec-gomez-chef-ng.png'),
+    require('./img/2maw-marines.png'), require('./img/boyd-santiago-navy.png'), 
+    require('./img/LC-Ratliff.png'), require('./img/sea-breeze.png'),
+    require('./img/captain-usmc-ww2.png'), require('./img/detainee-training.png'),  
+    require('./img/adams-range.png'), require('./img/marines-kids-books.png'), 
+    require('./img/good-old-days-parade.png'), require('./img/kelsey-casey-usmc-pilot.png'),
+    require('./img/good-old-days-parade2.png'), require('./img/pebble-beach.png'),  
+    require('./img/charles-m-daniels.png'), require('./img/home-lucian-friel.png'),
+    require('./img/good-old-days-parade3.png'), require('./img/39-45-8th-air-force.png'), 
+    require('./img/marine-children.png')
   ]); 
 
     this.state = {
