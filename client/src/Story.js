@@ -15,7 +15,7 @@ const divStyle ={
   background: 'linear-gradient(to right, #E0162B, #0052A5)' 
 };
 var mobile = {
- 
+  fontFamily: 'Fjalla One',
  '@media (max-width: 420px)': {
     width: '100%'
   }
