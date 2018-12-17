@@ -14,7 +14,7 @@ const divStyle ={
   // background: '#0052A5', 
   // background: '-webkit-linear-gradient(to right, #E0162B, #0052A5)',
   // background: 'linear-gradient(to right, #E0162B, #0052A5)' 
-
+  // height: 'vh80%',
    background: 'linear-gradient(to right, #E0162B, #0052A5)',
    letterSpacing: '2px'
 }
@@ -75,7 +75,10 @@ class Story extends React.Component {
     quote = title.replace(/&quot;/g, " \" ");
     amp = quote.replace(/&amp;/g, "and");
     
-    const descript = this.props.description;
+    let descript = this.props.description;
+    if (descript === null){
+      descript = ""
+    }
     title_ = descript.replace(/&#39;/g, "'");
     quote_ = title_.replace(/&quot;/g, " \" ");
     amp_ = quote_.replace(/&amp;/g, "and");
@@ -89,12 +92,15 @@ render(){
   return (   
    
       <div style={divStyle}className="col-sm-12 space" align="center">
+       {/* <h6 className ="headline" align="left">{amp}</h6> */}
         <LazyLoad height={'100%'}>
          <StyleRoot>
          <Fade>
      <div style={mobile} className="card-body Eatery" align="center">
    
      <h2 className ="headline" align="center">{amp}</h2>
+   
+						
      {/* <img className = "ui centered image mar" src={require('./lauren-bryan-711710-unsplash.jpg')} alt="american flag" /> */}
     <img className = "img-fluid" src={rImages()} alt="personel" />
      {/* <a href={this.props.link}><p className="cordele">{howbahdatnow[0]}....</p></a> */}

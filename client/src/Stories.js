@@ -69,7 +69,8 @@ headlines = (
                    description={headline.description}
                    link={headline.link}
                    branch = {this.state.branch}
-                      /> 
+                     
+                   /> 
                  })}
             
 			</div>                  
