@@ -36,6 +36,7 @@ app.use(sslRedirect());
 // })
 // }
 
+function getParsed() {
 // Branch(3715726507793308443,"army");
 const army =
 {
@@ -127,6 +128,9 @@ rssUSMC.work(function (err, success) {
          console.error(err)
     }
 })
+console.log("I've been parsed");
+};
+setInterval(getParsed, 29000000)
 
 
 app.use(express.static(__dirname + '/public'));
