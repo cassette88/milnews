@@ -8,7 +8,7 @@ const RSSToMongo = require('rss-node-mongo');
 const feedURL = "https://www.google.com/alerts/feeds/13505578085637347686/";
 
 const db = require('./config/keys').mongoURI;
-var sslRedirect = require('heroku-ssl-redirect');
+//var sslRedirect = require('heroku-ssl-redirect');
 
 MongoClient.connect(db, { useNewUrlParser: true },function (err, client) {
     if (err) throw err;
@@ -18,7 +18,7 @@ console.log("Military db up");
 
 
 // enable ssl redirect
-app.use(sslRedirect());
+//app.use(sslRedirect());
 
 // constructor to refactor code
 // function Branch(rss, collection){
