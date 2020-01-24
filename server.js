@@ -130,7 +130,7 @@ rssUSMC.work(function (err, success) {
 })
 console.log("I've been parsed");
 };
-setInterval(getParsed, 5400000)
+setInterval(getParsed, 54000)
 
 
 app.use(express.static(__dirname + '/public'));
