@@ -1,0 +1,149 @@
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rosario', sans-serif;
+} 
+
+h1{
+    font-family: 'Rosario', sans-serif; 
+    letter-spacing: 4.5px;
+    animation-name: moveInRight;
+  animation-duration: 5s;
+}
+
+/* .headline {
+    font-family: 'Rosario', sans-serif;
+} */
+
+img {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+img:hover {
+    filter: brightness(120%);
+}
+
+button:hover {
+    filter:brightness(130%);
+}
+
+.segment {
+background: #009FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.text-center{
+    text-align: center;
+    padding: 6px;
+}
+.center-buttons{
+    margin: 0 auto;
+    display:inline-block;
+}
+
+.topbutton {
+    margin: 2px;
+}
+
+
+/* .button-list {
+   
+    display:inline-block;
+    text-align: center;
+} */
+
+.card-body{
+    padding:0;
+}
+
+
+
+.Eatery {
+    
+   width: 70%; 
+   margin: 10px 0 10px 0; 
+   border: 1px solid #2310c1; 
+  box-shadow: 0 2px 3px #ccc;
+  padding: 16px;  
+  text-align: center;
+  background-color: white;
+  /* background-image: url("https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=824b0560c76469fa22c2ecdf1985ac01&auto=format&fit=crop&w=400&q=60"); */
+  /* background-image: url("https://images.unsplash.com/photo-1440407876336-62333a6f010f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=308007c4696ff2d58ab972a8e2811931&auto=format&fit=crop&w=400&q=60"); */
+  /* background-image: url("./ng-unsplash-30950.jpg");
+  background-size: contain;
+  background-position: center;
+  background-size: cover; */
+  color: black;
+  filter: brightness(120%);
+}
+.biz-name {
+  margin-top: 5px;
+  font-family: 'Bitter', serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+.cordele {
+ /* font-family: 'Roboto Mono', monospace;  */
+  font-size: 1.2em;
+   padding: 7px; 
+  padding-top: 5px;
+  padding-bottom: 3px;
+  animation-name: moveInLeft;
+  animation-duration: 5s;
+   font-family: 'Rosario', sans-serif; 
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.mar {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+
+a{
+ color:black;
+ font-weight: 800;
+ 
+}
+
+a:link {
+    text-decoration: underline;
+}
+.textBody {
+   margin:5px;
+}
+
+@keyframes moveInLeft {
+  0%  {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  80% {
+      transform: translateX(5px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+
+@keyframes moveInRight {
+  0%  {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+
+  80% {
+      transform: translateX(5px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
