@@ -17,7 +17,7 @@
     "axios": "^0.21.1",
     "concurrently": "^5.0.0",
     "express": "^4.16.3",
-    "heroku-ssl-redirect": "0.0.4",
+    "heroku-ssl-redirect": "0.1.1",
     "mongodb": "^3.3.3",
     "rss-node-mongo": "^1.0.3",
     "rss-parser": "^3.4.3"
